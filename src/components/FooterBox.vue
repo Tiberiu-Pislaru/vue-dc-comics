@@ -82,6 +82,33 @@
             </div>
         </div>
         
+        <div class="container-links">
+            <div class="content-links">
+                <div class="sign-up">
+                    SIGN-UP NOW
+                </div>
+                <div class="social">
+                    <div class="text">
+                        FOLLOW US
+                    </div>
+                    <div id="facebook" class="social-network">
+                        <img src="@/assets/footer-facebook.png" alt="">
+                    </div>
+                    <div id="twitter" class="social-network">
+                        <img src="@/assets/footer-twitter.png" alt="">
+                    </div>
+                    <div id="youtube" class="social-network">
+                        <img src="@/assets/footer-youtube.png" alt="">
+                    </div>
+                    <div id="pinterest" class="social-network">
+                        <img src="@/assets/footer-pinterest.png" alt="">
+                    </div>
+                    <div id="periscope" class="social-network">
+                        <img src="@/assets/footer-periscope.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -110,7 +137,7 @@ export default {
             flex-direction: column;
             flex-wrap: wrap;
             align-content: flex-start;
-            margin-top: 20px;
+            padding-top: 20px;
             color: #fff;
             flex-grow: 1;
             
@@ -126,13 +153,42 @@ export default {
             background-size:cover;
             background-position: center;
 
-            // img{
-            //     width:100%;
-            //     object-fit: cover;
-            // }
         }
         
-        
+    }
+}
+
+.container-links{
+    background-color: #303030;
+    padding: 15px 0;
+
+    .content-links{
+        width:$width-container;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .sign-up{
+            border: 3px solid green;
+            padding: 15px;
+            color: $color-white;
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            div{
+                margin: 0 15px;
+            }
+            .text{
+                color:$color-buttons-navbar;
+            }
+            .social-network{
+                width:30px;
+                img{
+                    width:100%;
+                }
+            }
+        }
     }
 }
 </style>

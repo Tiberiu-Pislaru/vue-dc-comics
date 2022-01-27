@@ -21,7 +21,7 @@ export default {
         height: 200px;
         vertical-align: middle;
         line-height: 200px;
-        color: #fff;
+        color: $color-white;
         .content {
 
             width: $width-container;

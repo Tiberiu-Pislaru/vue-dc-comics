@@ -57,7 +57,7 @@ export default {
 @import '@/style/variables.scss';
     .container-marketing{
         background-color: $color-buttons-navbar;
-        color: #fff;
+        color: $color-white;
         padding: 10px 0;
         font-size: 10px;
 
