@@ -1,16 +1,16 @@
 <template>
     <div class="container">
-
-        <div class="content">
-            --Content goes here ---
-        </div>
+        <jumbo-tron/>
 
     </div>
 </template>
 
 <script>
+import JumboTron from './JumboTron.vue'
 export default {
-    
+    components:{
+        JumboTron
+    }
 }
 </script>
 
@@ -18,15 +18,8 @@ export default {
 @import '@/style/variables.scss';
     .container {
         background-color: black;
-        height: 200px;
-        vertical-align: middle;
-        line-height: 200px;
-        color: $color-white;
-        .content {
-
-            width: $width-container;
-            margin:0 auto;
-        }
+       
+       
     }
 
 </style>
