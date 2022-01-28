@@ -75,5 +75,7 @@ export default {
 <style lang="scss">
 @import './style/main.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+body{
+  font-family: 'Roboto';
+}
 </style>

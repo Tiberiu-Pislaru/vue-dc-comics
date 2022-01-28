@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 @import '../style/JumboTron.scss'
 </style>
