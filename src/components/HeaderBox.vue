@@ -6,16 +6,8 @@
             </div>
             <nav>
                 <ul>
-                    <li>CHARACTERS</li>
-                    <li>COMICS</li>
-                    <li>MOVIES</li>
-                    <li>TV</li>
-                    <li>GAMES</li>
-                    <li>COLLECTIBLES</li>
-                    <li>VIDEOS</li>
-                    <li>FANS</li>
-                    <li>NEWS</li>
-                    <li>SHOP</li>
+                    <li v-for="button in buttons" :key='button.id'>{{button.name}}</li>
+                    
                 </ul>
             </nav>
 
@@ -26,7 +18,10 @@
 
 <script>
 export default {
-    
+    props: {
+       buttons:Array
+    },
+
 }
 </script>
 
