@@ -1,0 +1,35 @@
+@import '@/style/variables.scss';
+
+.container-links{
+    background-color: #303030;
+    padding: 15px 0;
+
+    .content-links{
+        width:$width-container;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .sign-up{
+            border: 3px solid green;
+            padding: 15px;
+            color: $color-white;
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            div{
+                margin: 0 15px;
+            }
+            .text{
+                color:$color-buttons-navbar;
+            }
+            .social-network{
+                width:30px;
+                img{
+                    width:100%;
+                }
+            }
+        }
+    }
+}

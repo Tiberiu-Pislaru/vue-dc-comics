@@ -1,0 +1,38 @@
+@import '@/style/variables.scss';
+
+.container-info{
+    background: url('../assets/footer-bg.jpg');
+    
+    .content-info{
+        width:$width-container;
+        height: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .content-info-text{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            padding-top: 20px;
+            color: #fff;
+            flex-grow: 1;
+            
+            .info-section{
+                padding-bottom: 15px ;
+                margin-right: 25px;
+            }
+        }
+
+        .logo-dc{
+            flex-grow: 1;
+            background: url('../assets/dc-logo-bg.png') no-repeat;
+            background-size:cover;
+            background-position: center;
+
+        }
+        
+    }
+}
